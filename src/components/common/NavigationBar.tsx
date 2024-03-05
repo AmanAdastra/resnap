@@ -50,13 +50,13 @@ export const NavigationBar = () => {
             <div className='flex justify-between w-[calc(100vw-630px)] h-full '>
                 <div className='flex items-center h-full  '>
                     {pageLinks.map((link, index) => (
-                        <IconLink key={index} href='/' icon={link.icon} color={link.color} size={link.size} animate='' />
+                        <IconLink key={'pageLinks' + index} href='/' icon={link.icon} color={link.color} size={link.size} animate='' />
                     ))}
                 </div>
 
                 <div className='flex items-center h-full'>
                     {settingLinks.map((link, index) => (
-                        <IconLink key={index} href='/' icon={link.icon} color={link.color} size={link.size} animate={link.animate} />
+                        <IconLink key={'settingLinks' + index} href='/' icon={link.icon} color={link.color} size={link.size} animate={link.animate} />
                     ))}
                 </div>
             </div>
