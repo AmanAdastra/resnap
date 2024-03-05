@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Fredoka } from "next/font/google";
 import "./globals.css";
 
-const inter = Fredoka({ subsets: ["latin"] });
+const inter = Fredoka({ subsets: ["hebrew"] });
 
 export const metadata: Metadata = {
   title: "Resnap",
