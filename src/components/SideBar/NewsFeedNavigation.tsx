@@ -5,11 +5,11 @@ import { NavigationTitle } from './NavigationTitle'
 export const NewsFeedNavigation = () => {
 
     const sections = [
-        { icon: Tv, gradientFrom: '#0575e6', gradientTo: '#021b79', text: 'Newsfeed' },
-        { icon: Award, gradientFrom: '#e44d26', gradientTo: '#f16529', text: 'Badges' },
-        { icon: Globe, gradientFrom: '#f2994a', gradientTo: '#f2c94c', text: 'Explore Stories' },
-        { icon: Zap, gradientFrom: '#ee0979', gradientTo: '#ee0979', text: 'Popular Groups' },
-        { icon: User, gradientFrom: '#05f', gradientTo: '#09f', text: 'Author Profile' },
+        { icon: Tv, gradient: 'bg-gradient-to-r from-[#0575e6] to-[#021b79]', text: 'Newsfeed' },
+        { icon: Award, gradient: 'bg-gradient-to-r from-[#e44d26] to-[#f16529]', text: 'Badges' },
+        { icon: Globe, gradient: 'bg-gradient-to-r from-[#f2994a] to-[#f2c94c] ', text: 'Explore Stories' },
+        { icon: Zap, gradient: 'bg-gradient-to-r from-[#ee0979] to-[#ee0979] ', text: 'Popular Groups' },
+        { icon: User, gradient: 'bg-gradient-to-r from-[#05f] to-[#09f] #05f', text: 'Author Profile' },
     ];
 
     return (
@@ -18,12 +18,12 @@ export const NewsFeedNavigation = () => {
             {
                 sections.map((el, index) => {
                     return (
-                            <div key={'NavigationTitle'+ index} className='flex h-[54px]  text-[15px] my-[1px] mx-[5px] py-[12px] px-[15px] items-center text-gray-400'>
-                                <div className={'h-[45px] w-[45px] rounded-full flex-center ' + ` bg-gradient-to-r from-[${el.gradientFrom}] to-[${el.gradientTo}] `}>
-                                    {React.createElement(el.icon, { color: '#fff', size: 20 })}
-                                </div>
-                                <span className='font-medium ml-4'>{el.text}</span>
+                        <div key={'NavigationTitle' + index} className='flex h-[54px]  text-[15px] my-[1px] mx-[5px] py-[12px] px-[15px] items-center text-gray-400'>
+                            <div className={` flex-center h-[45px] w-[45px]  ${el.gradient}  rounded-full   `}>
+                                {React.createElement(el.icon, { color: '#fff', size: 20 })}
                             </div>
+                            <span className='font-medium ml-4'>{el.text}</span>
+                        </div>
                     )
                 })
             }
