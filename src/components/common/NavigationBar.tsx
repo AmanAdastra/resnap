@@ -35,7 +35,7 @@ export const NavigationBar = () => {
     ]
 
     return (
-        <div className='fixed top-0 left-0 flex items-center h-[96px] w-full bg-white px-[15px]'>
+        <div className='fixed top-0 left-0 flex items-center h-[96px] w-full bg-white px-[15px] z-50'>
             {/* Site Icons */}
             <div className='flex items-center w-[280px] h-[90px] pl-[10px]'>
                 <Zap color='#10d876' size={36} className='mr-2' />
