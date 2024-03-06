@@ -30,7 +30,7 @@ const StoryComponent = () => {
     return (
         <Swiper
             slidesPerView={5}
-            className='w-[60%] mt-10'
+            className='w-[60%] mt-8'
         >
             <SwiperSlide key={'StoryComponent-' + 0}>
                 <div className={"flex flex-col items-center justify-end h-[200px] w-[125px] rounded-lg bg-[#343b41]"} >
