@@ -3,7 +3,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Plus } from 'react-feather';
 import 'swiper/css';
-
+import { useRef } from 'react';
 
 const story_data = [
     { id: 1, user: 'https://uitheme.net/sociala/images/user-11.png', content: 'https://uitheme.net/sociala/images/s-1.jpg', username: "Victor Exrixon", type: 'image' },
@@ -16,6 +16,17 @@ const story_data = [
 ]
 
 const StoryComponent = () => {
+
+    const videoRefs = story_data.map(() => useRef<HTMLVideoElement>(null));
+
+    const handleMouseEnter = (index: number) => {
+        videoRefs[index]?.current?.play();
+    };
+
+    const handleMouseLeave = (index: number) => {
+        videoRefs[index]?.current?.pause();
+    };
+
     return (
         <Swiper
             slidesPerView={5}
@@ -35,11 +46,14 @@ const StoryComponent = () => {
             </SwiperSlide>
 
             {story_data.map((el, index) => (
-                <SwiperSlide key={'StoryComponent-video-' + index}>
+                <SwiperSlide key={'StoryComponent-video-' + index}
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={() => handleMouseLeave(index)}
+                >
                     <div className={"flex flex-col items-center justify-end h-[200px] w-[125px] rounded-lg cursor-pointer relative"} style={el.type == "image" ? { backgroundImage: `url(${el.content})` } : undefined}>
                         {
                             el.type == "video" ? (
-                                <video className="h-full w-full object-cover rounded-lg" autoPlay loop >
+                                <video ref={videoRefs[index]} className="h-full w-full object-cover rounded-lg">
                                     <source src={el.content} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
