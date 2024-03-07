@@ -5,8 +5,8 @@ const profile_pic = 'https://uitheme.net/sociala/images/user-8.png'
 
 const AddPostComponent = () => {
     return (
-        <div className='h-[245px] flex justify-center w-full mt-10 pt-1 px-10 '>
-            <div className='w-[60%] h-full '>
+        <div className='h-[245px] flex justify-center w-full mt-10 pt-1  '>
+            <div className='w-full h-full '>
                 <div className='flex items-center h-[35px] text-[#adb5bd]'>
                     <Edit color='#1e74fd' className='ml-1 mr-3' size={18} />
                     <span className='text-[12px] font-medium tracking-wide'>Create Post</span>
@@ -33,7 +33,7 @@ const AddPostComponent = () => {
                         </div>
                     </div>
 
-                    <div className='flex-center'>
+                    <div className='flex-center mr-10'>
                         <div className="w-1 h-1 rounded-full bg-gray-700 inline-block mr-1"></div>
                         <div className="w-1 h-1 rounded-full bg-gray-700 inline-block mr-1"></div>
                         <div className="w-1 h-1 rounded-full bg-gray-700 inline-block"></div>
