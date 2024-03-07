@@ -39,7 +39,7 @@ export const NavigationBar = () => {
             {/* Site Icons */}
             <div className='flex items-center w-[280px] h-[90px] pl-[10px]'>
                 <Zap color='#10d876' size={36} className='mr-2' />
-                <span className='text-[#05f] font-bold text-4xl tracking-wide'>Sociala.</span>
+                <span className='text-[#05f] font-bold text-4xl tracking-wide'>ReSnap.</span>
             </div>
             {/* Search Box */}
             <div className='bg-[#eee] py-2 pl-[16px] pr-[16px] h-[48px] w-[350px] flex-center rounded-[30px]'>
