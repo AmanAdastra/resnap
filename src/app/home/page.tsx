@@ -27,7 +27,8 @@ export default function Page() {
                             </div>
                             <div className="flex justify-center w-full h-[200px] " >
                                 <div className="w-[58%] " >
-                                    <ArticleComponent/>
+                                    <ArticleComponent />
+                                    <ArticleComponent />
                                 </div>
                                 <div className=" w-[30%] ">
                                 </div>

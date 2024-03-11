@@ -13,7 +13,6 @@ export const AccountInfoTile = (accountProps: AccountInfoTileProps) => {
         <>
             <div className='flex items-center justify-between  '>
                 <div className='flex'>
-
                     <div className='w-[45px] h-[45px] rounded-full mr-2 '>
                         <img src={accountProps.imageUrl} className='w-full h-full' />
                     </div>
