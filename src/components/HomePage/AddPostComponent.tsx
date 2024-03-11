@@ -1,5 +1,6 @@
 import React from 'react'
 import { Edit, Video, Image, Camera } from 'react-feather'
+import { DotComponent } from './DotComponent'
 
 const profile_pic = 'https://uitheme.net/sociala/images/user-8.png'
 
@@ -16,9 +17,9 @@ const AddPostComponent = () => {
                     <textarea rows={5} placeholder='Whats on your mind?' className="flex-1 pt-1 resize-none rounded-md focus:outline-none text-[#adb5bd] text-[14px] placeholder:text-[14px]"></textarea>
                 </div>
                 {/* Icons */}
-                <div className='flex justify-between ml-1'>
+                <div className='flex justify-between ml-1 mt-4'>
 
-                    <div className='flex gap-8'>
+                    <div className='flex gap-8 '>
                         <div className='flex-center gap-2'>
                             <Video color='#e50202' size={20} />
                             <span className='text-[14px] tracking-wide leading-3 text-gray-800 font-normal'>Live Video</span>
@@ -33,11 +34,7 @@ const AddPostComponent = () => {
                         </div>
                     </div>
 
-                    <div className='flex-center mr-10'>
-                        <div className="w-1 h-1 rounded-full bg-gray-700 inline-block mr-1"></div>
-                        <div className="w-1 h-1 rounded-full bg-gray-700 inline-block mr-1"></div>
-                        <div className="w-1 h-1 rounded-full bg-gray-700 inline-block"></div>
-                    </div>
+                    <DotComponent />
 
                 </div>
             </div>
