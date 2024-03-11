@@ -51,7 +51,7 @@ const FriendRequestComponent = () => {
         <div className='mt-4 p-6 w-[90%]'>
             <div className='flex justify-between text-[14px] mb-12'>
                 <span className='text-[#212529] font-medium'>Friend Request</span>
-                <button className='text-[#1e74fd] font-medium cursor-pointer'>See all</button>
+                <button className='text-[#1e74fd] font-medium mr-4 cursor-pointer'>See all</button>
             </div>
 
             {

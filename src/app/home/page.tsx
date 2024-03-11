@@ -4,6 +4,7 @@ import StoryComponent from "@/components/HomePage/StoryComponent";
 import AddPostComponent from "@/components/HomePage/AddPostComponent";
 import FriendRequestComponent from "@/components/HomePage/FriendRequestComponent";
 import { ArticleComponent } from "@/components/HomePage/ArticleComponent";
+import { ConfirmFriendComponent } from "@/components/HomePage/ConfirmFriendRequestComponent";
 
 export default function Page() {
     return (
@@ -30,7 +31,7 @@ export default function Page() {
                                     <ArticleComponent />
                                 </div>
                                 <div className=" w-[30%] ">
-                                    <FriendRequestComponent />
+                                    <ConfirmFriendComponent />
                                 </div>
                             </div>
                         </div>
