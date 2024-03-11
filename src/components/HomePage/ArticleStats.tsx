@@ -3,7 +3,7 @@ import { ThumbsUp, Heart, MessageCircle, Share2 } from 'react-feather'
 
 const ArticleStats = () => {
     return (
-        <div className='my-[16px] text-[16px]'>
+        <div className='my-[16px] mr-10 text-[16px]'>
             <div className='flex justify-between items-center'>
                 <div className='flex gap-1 items-center'>
                     <div className='flex-center rounded-full w-[25px] h-[25px] ' style={{ background: 'linear-gradient(135deg,#05f,#09f)' }}>

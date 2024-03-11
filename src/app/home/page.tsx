@@ -16,7 +16,7 @@ export default function Page() {
                         <div className=" w-[10%]">
                         </div>
                         <div className="flex flex-wrap w-[70%]  h-fit ">
-                            <div className="flex justify-center  w-full ">
+                            <div className="flex justify-center w-full ">
                                 <div className="w-[58%] " >
                                     <StoryComponent />
                                     <AddPostComponent />
@@ -28,9 +28,9 @@ export default function Page() {
                             <div className="flex justify-center w-full h-[200px] " >
                                 <div className="w-[58%] " >
                                     <ArticleComponent />
-                                    <ArticleComponent />
                                 </div>
                                 <div className=" w-[30%] ">
+                                    <FriendRequestComponent />
                                 </div>
                             </div>
                         </div>

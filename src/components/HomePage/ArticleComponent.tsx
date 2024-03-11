@@ -6,7 +6,7 @@ import ArticleStats from './ArticleStats'
 
 export const ArticleComponent = () => {
   return (
-    <div className='py-[24px]'>
+    <div className='px-[12px]'>
       <AccountInfoTile imageUrl='https://uitheme.net/sociala/images/user-7.png' username='Surfiya Zakir' timeString='3 hour ago' />
       <ContentTile />
       <PicsTile />

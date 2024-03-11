@@ -6,7 +6,7 @@ const profile_pic = 'https://uitheme.net/sociala/images/user-8.png'
 
 const AddPostComponent = () => {
     return (
-        <div className='h-[245px] flex justify-center w-full mt-10 pt-1  '>
+        <div className='h-[245px] flex justify-center w-full mt-10 pt-1 px-[12px]  '>
             <div className='w-full h-full '>
                 <div className='flex items-center h-[35px] text-[#adb5bd]'>
                     <Edit color='#1e74fd' className='ml-1 mr-3' size={18} />
@@ -17,7 +17,7 @@ const AddPostComponent = () => {
                     <textarea rows={5} placeholder='Whats on your mind?' className="flex-1 pt-1 resize-none rounded-md focus:outline-none text-[#adb5bd] text-[14px] placeholder:text-[14px]"></textarea>
                 </div>
                 {/* Icons */}
-                <div className='flex justify-between ml-1 mt-4'>
+                <div className='flex justify-between mt-4'>
 
                     <div className='flex gap-8 '>
                         <div className='flex-center gap-2'>
